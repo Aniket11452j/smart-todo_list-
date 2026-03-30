@@ -38,25 +38,8 @@ while True:
         save_data()
         print("Added:", task)
 
-    elif choice == "3":
-        if not tasks:
-            print("no tasks there, kuch toh daal 😅")
-        else:
-            for i, t in enumerate(tasks):
-                print(i+1, t)
-
-            delete_task = int(input("enter task number >> ")) - 1
-
-            if 0 <= delete_task < len(tasks):
-                removed = tasks.pop(delete_task)
-                save_data()
-                print("Deleted:", removed)
-            else:
-                print("invalid input bhai")
-
     else:
         print("wrong choice")
-
 
 
     
